@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my telegram</title>
+    <style>
+      body {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+      }
+      .container1 {
+        width: 1100px;
+        height: 770px;
+        background-color: white;
+      }
+      .container {
+        background-color: white;
+        height: 700px;
+        width: 400px;
+
+        position: relative;
+
+        border-right: 1px solid rgb(196, 194, 194);
+      }
+      .container2 {
+        background-color: rgb(238, 237, 237);
+        position: absolute;
+        top: -1px;
+        width: 400px;
+        height: 200px;
+      }
+      h2 {
+        margin-left: 165px;
+        color: rgb(0, 0, 0);
+      }
+      .container3 {
+        height: 60px;
+        width: 60px;
+        margin-left: 160px;
+        border: 2px solid rgb(0, 255, 179);
+        border-radius: 100px;
+      }
+      .zz {
+        display: flex;
+        flex-direction: column;
+      }
+      h5 {
+        margin-left: 165px;
+        margin-top: 1px;
+      }
+      .label {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 330px;
+        height: 25px;
+        margin-top: -10px;
+        border-radius: 40px;
+        border: none;
+        text-align: center;
+        background-color: rgb(220, 218, 218);
+      }
+      .monkey {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 30px;
+      }
+      .a {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 10px;
+        left: 80px;
+      }
+      .tele {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .first {
+        font-size: 15px;
+        position: absolute;
+        top: 25px;
+        left: 80px;
+      }
+      .people {
+        position: absolute;
+        color: gray;
+        left: 100px;
+        top: 50px;
+        font-size: 15px;
+        /* border-bottom: 1px solid gray; */
+      }
+
+      .qer {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 30px;
+        left: 350px;
+      }
+      .w {
+        width: 320px;
+        position: absolute;
+        background-color: 1px solid rgb(192, 192, 192);
+        left: 78px;
+      }
+      .ele {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .second {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .peop {
+        position: absolute;
+        color: gray;
+        left: 100px;
+        top: 30px;
+        font-size: 12px;
+      }
+      .ter {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+      .y {
+        width: 320px;
+        position: absolute;
+        background-color: 1px solid rgb(192, 192, 192);
+        left: 78px;
+      }
+      .mmmm {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .imd {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 10px;
+        left: 80px;
+      }
+      .le {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+        border-bottom: ;
+      }
+
+      .third {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .ll {
+        position: absolute;
+        color: gray;
+        left: 80px;
+        top: 35px;
+        font-size: 12px;
+      }
+      .ty {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+      .lll {
+        width: 320px;
+        position: absolute;
+        background-color: 1px solid rgb(192, 192, 192);
+        left: 78px;
+      }
+      .l {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .miu {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .fourth {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .im {
+        position: absolute;
+        color: gray;
+        left: 100px;
+        top: 30px;
+        font-size: 12px;
+      }
+      .um {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+      .ym {
+        width: 320px;
+        position: absolute;
+        background-color: 1px solid rgb(192, 192, 192);
+        left: 78px;
+      }
+      .mi {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .mu {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 10px;
+        left: 80px;
+      }
+      .nurbi {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .fivth {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .nu {
+        position: absolute;
+        color: gray;
+        left: 100px;
+        top: 30px;
+        font-size: 12px;
+      }
+      .nurb {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+
+      .nurr {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .bi {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 10px;
+        left: 80px;
+      }
+      .assel {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .six {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .asse {
+        position: absolute;
+        color: gray;
+        left: 80px;
+        top: 30px;
+        font-size: 12px;
+      }
+      .al {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+
+      .ass {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .as {
+        width: 15px;
+        height: 15px;
+        margin-left: 140px;
+        margin-bottom: 25px;
+      }
+      .nuet {
+        position: relative;
+        border-bottom: 1px solid rgb(196, 194, 194);
+      }
+      .seven {
+        font-size: 15px;
+        position: absolute;
+        top: 10px;
+        left: 80px;
+      }
+      .ielt {
+        position: absolute;
+        color: gray;
+        left: 80px;
+        top: 30px;
+        font-size: 12px;
+      }
+      .ie {
+        position: absolute;
+        color: gray;
+        font-size: 15px;
+        top: 20px;
+        left: 350px;
+      }
+
+      .ielts {
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .iel {
+        width: 15px;
+        height: 15px;
+        margin-left: 85px;
+        margin-bottom: 25px;
+      }
+      .bot {
+        background-color: rgb(238, 237, 237);
+        position: absolute;
+        bottom: -70px;
+        width: 400px;
+        height: 60px;
+      }
+      .p {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      .o {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 70px;
+      }
+      .i {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: 80px;
+      }
+      .u {
+        width: 20px;
+        height: 20px;
+        margin-left: 60px;
+        margin-top: 20px;
+      }
+      .f {
+        border-bottom: 1px solid rgb(196, 194, 194);
+        position: relative;
+        top: -70px;
+      }
+
+      .gen {
+        position: absolute;
+        color: rgb(3, 3, 3);
+        margin-left: 500px;
+      }
+      .web {
+        position: absolute;
+        top: 70px;
+        color: rgb(3, 3, 3);
+        margin-left: 500px;
+
+        font-size: 15px;
+        color: rgb(181, 179, 179);
+      }
+      .gb {
+        position: absolute;
+        top: 250px;
+        left: 700px;
+        background-color: white;
+        width: 480px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .GB {
+        color: rgb(36, 4, 194);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .ng {
+        margin-left: 420px;
+        font-size: 10px;
+        margin-top: -10px;
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 40px;
+      }
+
+      .tl {
+        position: absolute;
+        top: 170px;
+        left: 700px;
+        background-color: white;
+        width: 350px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .lt {
+        color: rgb(166, 4, 207);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .lk {
+        margin-left: 300px;
+        font-size: 10px;
+        margin-top: -10px;
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 40px;
+      }
+
+      .Aruzhann {
+        position: absolute;
+        top: 330px;
+        left: 700px;
+        background-color: white;
+        width: 430px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .Ar {
+        color: rgb(41, 174, 0);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .az {
+        margin-left: 380px;
+        font-size: 10px;
+        margin-top: -5px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 40px;
+      }
+
+      .Alchikenova {
+        position: absolute;
+        top: 400px;
+        left: 900px;
+        background-color: white;
+        width: 380px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .Alch {
+        color: rgb(174, 0, 0);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .mk {
+        margin-left: 300px;
+        font-size: 10px;
+        margin-top: 20px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 10px;
+      }
+      .aqniyet {
+        position: absolute;
+        top: 480px;
+        left: 700px;
+        background-color: white;
+        width: 380px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .aqn {
+        color: rgb(0, 9, 174);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+
+        display: block;
+        color: rgb(36, 4, 194);
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .gn {
+        margin-left: 320px;
+        font-size: 10px;
+        margin-top: 20px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 10px;
+      }
+      .thesecond {
+        position: absolute;
+        top: 535px;
+        left: 700px;
+        background-color: white;
+        width: 180px;
+        height: 30px;
+        border-radius: 20px;
+      }
+
+      .the {
+        text-decoration: none;
+
+        display: block;
+        color: rgb(0, 0, 0);
+        margin-left: 20px;
+        position: absolute;
+        top: -5px;
+      }
+      .th {
+        margin-left: 150px;
+        font-size: 10px;
+        margin-top: 19px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: -5px;
+      }
+      .komek {
+        position: absolute;
+        top: 600px;
+        left: 700px;
+        background-color: white;
+        width: 330px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .kom {
+        color: rgb(255, 230, 5);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .kk {
+        margin-left: 280px;
+        font-size: 10px;
+        margin-top: -5px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 40px;
+      }
+      .gulbakyt {
+        position: absolute;
+        top: 680px;
+        left: 700px;
+        background-color: white;
+        width: 410px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .gul {
+        color: rgb(255, 5, 172);
+        margin-left: 9px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        color: rgb(36, 4, 194);
+
+        margin-left: 10px;
+        position: absolute;
+        top: 20px;
+      }
+      .bak {
+        margin-left: 360px;
+        font-size: 10px;
+        margin-top: -5px;
+
+        color: rgb(171, 168, 168);
+        position: absolute;
+        top: 40px;
+      }
+      .ovb {
+        position: absolute;
+        z-index: 1;
+        width: 700px;
+        height: 695px;
+        border-top: 1px solid rgb(184, 183, 183);
+        left: 585px;
+        bottom: 40px;
+      }
+      .photos {
+        position: absolute;
+        z-index: 10;
+      }
+      .q {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-left: 450px;
+        margin-top: 170px;
+      }
+      .w {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-left: 370px;
+        margin-top: 250px;
+      }
+      .r {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        position: absolute;
+        left: 450px;
+        top: 480px;
+      }
+      .emd {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        position: absolute;
+        left: 450px;
+        top: 330px;
+      }
+      .t {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        position: absolute;
+        left: 450px;
+        top: 600px;
+      }
+      .y {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        border-radius: 30px;
+        position: absolute;
+        left: 450px;
+        top: 680px;
+      }
+      .ph {
+        position: absolute;
+        z-index: 5;
+        left: -10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="photos">
+        <img class="q" src="photo_5251538087589311172_c.jpg" />
+        <img class="w" src="photo_5343763271796258268_m.jpg" />
+        <img class="emd" src="photo_5343763271796258271_m.jpg" />
+        <img class="r" src="photo_5343763271796258273_y.jpg" />
+        <img class="t" src="photo_5343763271796258274_y.jpg" />
+        <img class="y" src="photo_5343763271796258277_y.jpg" />
+      </div>
+
+      <img class="ovb" src="zxc.png" />
+      <h4 class="gen">General</h4>
+      <p class="web">In 2F1web 25/26</p>
+      <div class="ph">
+        <div class="gb">
+          <h5 class="GB">Aknur</h5>
+          <a
+            href="https://ardaksejtzanova01-creator.github.io/3column-classwork/"
+            >https://ardaksejtzanova01-creator.github.io/3column-classwork/
+          </a>
+          <p class="ng">15:29</p>
+        </div>
+
+        <div class="tl">
+          <h5 class="lt">Kausar</h5>
+          <a href="https://myrakhankausar.github.io/classswork"
+            >https://myrakhankausar.github.io/classswork
+          </a>
+          <p class="lk">15:22</p>
+        </div>
+
+        <div class="Aruzhann">
+          <h5 class="Ar">Aruzhan</h5>
+          <a href="https://aruzhanalpamys-rgb.github.io/contact-form-main/"
+            >https://aruzhanalpamys-rgb.github.io/contact-form-main/
+          </a>
+          <p class="az">15:40</p>
+        </div>
+
+        <div class="Alchikenova">
+          <h5 class="Alch">You</h5>
+          <a href="https://aqnietqaysarbay-ctrl.github.io/nurbi/"
+            >https://aqnietqaysarbay-ctrl.github.io/nurbi/
+          </a>
+          <p class="mk">16:25</p>
+        </div>
+
+        <div class="aqniyet">
+          <h5 class="aqn">Aqniet</h5>
+          <a href="https://aqnietqaysarbay-ctrl.github.io/klllllllllll/"
+            >https://aqnietqaysarbay-ctrl.github.io/klllllllllll/
+          </a>
+          <p class="gn">16:25</p>
+        </div>
+
+        <div class="thesecond">
+          <p class="the">Hello teacher</p>
+          <p class="th">16:30</p>
+        </div>
+
+        <div class="komek">
+          <h5 class="kom">Komek</h5>
+          <a href="https://komekseidibai-beep.github.io/tfhtf/"
+            >https://komekseidibai-beep.github.io/tfhtf/
+          </a>
+          <p class="kk">18:03</p>
+        </div>
+
+        <div class="gulbakyt">
+          <h5 class="gul">Gulbakyt</h5>
+          <a href="https://gulbakhytsayaq-cmd.github.io/2F-1-Gulbakhyt/"
+            >https://gulbakhytsayaq-cmd.github.io/2F-1-Gulbakhyt/
+          </a>
+          <p class="bak">18:43</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container2">
+          <h2>Chats</h2>
+          <div class="zz">
+            <img class="container3" src="IMG_0953.JPG" />
+            <h5>My story</h5>
+
+            <input class="label" type="text" id="text" placeholder="Search" />
+            <div class="tele">
+              <img
+                class="monkey"
+                src="photo_5337247144983265294_y.jpg"
+                alt="monkey"
+              />
+              <img class="a" src="free-icon-statistics-1011528.png" />
+              <h3 class="first">Monkey English</h3>
+              <p class="people">___of people</p>
+              <p class="qer">03:11</p>
+            </div>
+            <div class="ele">
+              <img
+                class="mmmm"
+                src="photo_5337247144983265300_y.jpg"
+                alt="monkey"
+              />
+
+              <h3 class="second">STEEL.D</h3>
+              <img
+                class="imd"
+                src="316868AE-8525-48D4-B445-30C2F8748350 2.jpg"
+                alt="imd"
+              />
+              <p class="peop">
+                ничего не вырастает, пока вы <br />ничего не посадите
+              </p>
+              <p class="ter">07:12</p>
+            </div>
+            <div class="le">
+              <img
+                class="l"
+                src="photo_5337247144983265304_y.jpg"
+                alt="monkey"
+              />
+
+              <h3 class="third">jihcounseling</h3>
+
+              <p class="ll">2 kun kaldi, ulgerip kalindar, Dshniki</p>
+              <p class="ty">wd</p>
+
+              <div class="miu">
+                <img
+                  class="mi"
+                  src="photo_5337247144983265366_y.jpg"
+                  alt="monkey"
+                />
+                <div class="f"></div>
+
+                <h3 class="fourth">My Extra</h3>
+                <img class="mu" src="IMG_0719.PNG" alt="monkey" />
+                <p class="im">
+                  Jumeirah-созданоб чтобы <br />делиться Наслаждайтесь
+                  простран...
+                </p>
+                <p class="um">wd</p>
+              </div>
+
+              <div class="nurbi">
+                <img
+                  class="nurr"
+                  src="photo_5337247144983265470_y.jpg"
+                  alt="monkey"
+                />
+
+                <h3 class="fivth">Готовимся к SAT/NUET в...</h3>
+                <!-- <img class="nur" src="IMG_0719.PNG" alt="monkey" /> -->
+                <p class="nu">
+                  Немного моков по нует math part c <br />
+                  решением
+                </p>
+                <p class="nurb">wd</p>
+                <img
+                  class="bi"
+                  src="free-icon-forward-letter-16689397.png"
+                  alt="monkey"
+                />
+              </div>
+
+              <div class="assel">
+                <img
+                  class="ass"
+                  src="photo_5337247144983265492_y.jpg"
+                  alt="monkey"
+                />
+
+                <h3 class="six">Assel's English Hub</h3>
+                <img class="as" src="free-icon-united-states-206626.png" />
+
+                <p class="asse">
+                  Когда лучше всего начинать учить <br />
+                  новый язык? Я начала учить анг...
+                </p>
+                <p class="al">wd</p>
+              </div>
+
+              <div class="nuet">
+                <img
+                  class="ielts"
+                  src="photo_5337247144983265530_y.jpg"
+                  alt="monkey"
+                />
+
+                <h3 class="seven">NUET2026</h3>
+                <img class="iel" src="free-icon-flag-14009692.png" />
+
+                <p class="ielt">W admin?</p>
+                <p class="ie">wd</p>
+              </div>
+              <div class="bot">
+                <img class="p" src="free-icon-human-4466332.png" />
+                <img class="o" src="159832.png" />
+                <img class="i" src="2652175.png" />
+                <img class="u" src="126472.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
